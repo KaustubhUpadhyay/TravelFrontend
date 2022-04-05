@@ -19,7 +19,7 @@ function Login(props) {
         };
 
         try{
-            const res = await axios.post("/users/login",newUser);
+            const res = await axios.post("https://peaceful-hamlet-31863.herokuapp.com/api/users/login",newUser);
             props.myStorage.setItem("user",res.data.username);
             props.setCurrentUser(res.data.username);
             props.setShowLogin(false);
