@@ -27,10 +27,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build:css": "postcss src/app.css -o build/app.css",
-  "build:js": "babel src/app.js -o dist/app.js",
-  "build": "npm run build:css",
-   "build": "npm run build:css && npm run build:js"
+    
   },
   "eslintConfig": {
     "extends": [
