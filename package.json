@@ -25,7 +25,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build:js": "babel src/app.js -o dist/app.js",
+    "build": "npm run build:css && npm run build:js"
   },
   "eslintConfig": {
     "extends": [
@@ -33,6 +35,13 @@
       "react-app/jest"
     ]
   },
+  "babel": {
+  "presets": [
+     [
+       "@babel/preset-env"
+     ]
+   ]
+ },
   "browserslist": {
   "production": [
     ">0.2%",
