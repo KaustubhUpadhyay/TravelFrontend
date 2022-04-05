@@ -20,7 +20,8 @@
     "timeago.js": "^4.0.2",
     "web-vitals": "^2.1.4",
     "@babel/core": "^7.12.16",
-    "@babel/eslint-parser": "^7.12.16"
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0-rc.1"
   },
   
   "scripts": {
