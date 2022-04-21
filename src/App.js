@@ -6,6 +6,7 @@ import axios from "axios";
 import { format } from "timeago.js";
 import Login from "./components/Login";
 import Register from "./components/Register";
+import Image from "./components/Image";
 
 import "mapbox-gl/dist/mapbox-gl.css";
 
