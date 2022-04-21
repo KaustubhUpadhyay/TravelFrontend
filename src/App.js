@@ -62,11 +62,17 @@ function App() {
 
   const handleAddClick = (e) => {
     //console.log(e.lngLat.lat);
-
-    setNewPlace({
-      lat: e.lngLat.lat,
-      long: e.lngLat.lng,
-    });
+    
+    if(currentUser == null){
+        setShowRegister(true);
+        {showRegister && <Register setShowRegister={setShowRegister} />}
+    }
+    else{
+        setNewPlace({
+            lat: e.lngLat.lat,
+            long: e.lngLat.lng,
+          });
+    }
   };
 
   const handleSubmit = async (e) => {
