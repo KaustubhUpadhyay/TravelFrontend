@@ -10,6 +10,10 @@
     border: 3px solid rgb(116, 112, 112);
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 .card,p,div,span,h4{
     padding-left: 3px;
 }
