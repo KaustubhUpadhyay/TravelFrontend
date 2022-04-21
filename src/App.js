@@ -151,6 +151,7 @@ function App() {
                 onClose={() => setCurrentPlaceId(null)}
               >
                 <div className="card flex-container">
+                  <Image query={pin.title}/>
                   <label> Place </label>
                   <h4 className="place">{pin.title}</h4>
                   <label> Review </label>
