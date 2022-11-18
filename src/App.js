@@ -47,7 +47,7 @@ function App() {
     const getPins = async () => {
       try {
         // We can use path to pins directly coz we specified it in proxy on package.json
-        const res = await axios.get("https://peaceful-hamlet-31863.herokuapp.com/api/pins");
+        const res = await axios.get("https://pin-the-world.herokuapp.com/api/pins");
         setPins(res.data);
       } catch (err) {
         console.log(err);
@@ -89,7 +89,7 @@ function App() {
     };
 
     try {
-      const res = await axios.post("https://peaceful-hamlet-31863.herokuapp.com/api/pins", newPin);
+      const res = await axios.post("https://pin-the-world.herokuapp.com/api/pins", newPin);
       setPins([...pins, res.data]);
       setNewPlace(null);
     } catch (err) {
@@ -108,7 +108,7 @@ function App() {
     };
 
     try {
-      axios.post("https://peaceful-hamlet-31863.herokuapp.com/api/pins/delete", newPin);
+      axios.post("https://pin-the-world.herokuapp.com/api/pins/delete", newPin);
       const newArr = pins.filter((item) => {
         return item._id !== currentPlaceId;
       });
