@@ -21,7 +21,7 @@ function Register(props) {
         };
 
         try{
-            await axios.post("https://peaceful-hamlet-31863.herokuapp.com/api/users/register",newUser);
+            await axios.post("https://travelpinapp-3yjw.onrender.com/api/users/register",newUser);
             setFail(false);
             setSuccess(true);
         }catch(err){
